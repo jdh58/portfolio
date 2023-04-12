@@ -18,12 +18,12 @@
 }
 
 .iconContainer > img {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .techIcon .technologyName {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }

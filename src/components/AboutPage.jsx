@@ -1,4 +1,5 @@
 import TechIcon from './TechIcon';
+import Bash from '../assets/TechLogos/bash.svg';
 import CPP from '../assets/TechLogos/cpp.svg';
 import CSS from '../assets/TechLogos/css.svg';
 import Express from '../assets/TechLogos/express.png';
@@ -18,6 +19,8 @@ import React from '../assets/TechLogos/react.svg';
 import Redux from '../assets/TechLogos/redux.svg';
 import Tailwind from '../assets/TechLogos/tailwind.svg';
 import TS from '../assets/TechLogos/typescript.svg';
+import Vim from '../assets/TechLogos/vim.svg';
+import VSCode from '../assets/TechLogos/vscode.svg';
 import Webpack from '../assets/TechLogos/webpack.png';
 import '../styles/AboutPage.css';
 
@@ -53,20 +56,21 @@ export default function AboutPage() {
           <TechIcon imgURL={Express} name="Express" />
           <TechIcon imgURL={MongoDB} name="MongoDB" />
           <TechIcon imgURL={Jest} name="Jest" />
+          <TechIcon imgURL={NPM} name="NPM" />
           <TechIcon imgURL={CPP} name="C++" />
           <TechIcon imgURL={MySQL} name="MySQL" />
           <TechIcon imgURL={Firebase} name="Firebase" />
           <TechIcon imgURL={Webpack} name="Webpack" />
           <TechIcon imgURL={Git} name="Git" />
-          <TechIcon imgURL={GitHub} name="GitHub" />
-          <TechIcon imgURL={NPM} name="NPM" />
+          <TechIcon imgURL={Bash} name="Bash" />
         </div>
-      </div>
-      <div className="softwareContainer">
         <h2 className="softwareHeader">Software</h2>
         <div className="softwareGrid">
           <TechIcon imgURL={Photoshop} name="Photoshop" />
-          <TechIcon imgURL={Figma} name="Figma" />\{' '}
+          <TechIcon imgURL={Figma} name="Figma" />
+          <TechIcon imgURL={Vim} name="Vim" />
+          <TechIcon imgURL={VSCode} name="VSCode" />
+          <TechIcon imgURL={GitHub} name="GitHub" />
         </div>
       </div>
     </div>
