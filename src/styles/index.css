@@ -199,3 +199,7 @@ table {
     sans-serif;
   font-size: 10px;
 }
+
+.page {
+  height: calc(100vh - 50px);
+}

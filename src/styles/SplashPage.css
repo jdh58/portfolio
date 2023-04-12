@@ -1,0 +1,27 @@
+.splashPage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(white, rgba(0, 0, 0, 0.033));
+}
+
+/* Have it black with a star effect, then on the check it out click, 
+have a white gradient that takes over and transitions to about page */
+
+.splashText {
+  text-align: center;
+  font-size: 7.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.splashText .hello {
+  display: flex;
+  gap: 25px;
+}
+
+.hello .name {
+  color: #32cd32;
+  font-weight: 600;
+}
