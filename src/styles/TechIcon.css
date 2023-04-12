@@ -4,3 +4,26 @@
       </div>
       <h3 className="technologyName">{name}</h3>
     </div> */
+
+.techIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px solid black; */
+}
+
+.techIcon .iconContainer {
+}
+
+.iconContainer > img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.techIcon .technologyName {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
