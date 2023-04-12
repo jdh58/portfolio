@@ -145,3 +145,54 @@ table {
 :root {
   font-size: 10px;
 }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-UltraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Heavy.ttf);
+  font-weight: 1000;
+}
