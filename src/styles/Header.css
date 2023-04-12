@@ -1,10 +1,12 @@
 header.header {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
   padding-right: 75px;
-  background-color: #fcfcfc;
-  box-shadow: 0 -5px 12px rgba(0, 0, 0, 0.188);
+  background-color: #fff;
+  /* box-shadow: 0 -5px 12px rgba(0, 0, 0, 0.188); */
   gap: 75px;
   height: 50px;
 }
