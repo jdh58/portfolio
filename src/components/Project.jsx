@@ -1,3 +1,5 @@
+import TechIcon from './TechIcon';
+
 export default function Project() {
   return (
     <div className="project">
@@ -23,9 +25,9 @@ export default function Project() {
         <div className="coreTech">
           <h3 className="coreTechHeader">Core Technologies</h3>
           <div className="coreTechIcons">
-            <TechIcons />
-            <TechIcons />
-            <TechIcons />
+            <TechIcon />
+            <TechIcon />
+            <TechIcon />
           </div>
         </div>
       </div>

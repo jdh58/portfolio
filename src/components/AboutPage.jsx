@@ -1,3 +1,5 @@
+import TechIcon from './TechIcon';
+
 export default function AboutPage() {
   return (
     <div className="aboutPage page">

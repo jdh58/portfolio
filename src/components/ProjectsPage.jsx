@@ -1,3 +1,5 @@
+import Project from './Project';
+
 export default function ProjectsPage() {
   return (
     <div className="projectsPage page">
