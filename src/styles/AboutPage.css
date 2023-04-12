@@ -1,0 +1,88 @@
+/* <div className="aboutPage page">
+      <div className="aboutContainer">
+        <div className="aboutHeader">
+          <img src="" alt="" className="portrait" />
+          <h1>About Me</h1>
+        </div>
+        <div className="separator"></div>
+        <div className="aboutText">
+          I'm a software developer in Portland, Oregon. Currently, I am pursuing
+          a Bachelor's of Science in Computer Science. Outside of my education,
+          I have been learning Web Development technologies and building
+          projects. This site serves as my personal portfolio. Please enjoy!
+        </div>
+      </div>
+      <div className="techContainer">
+        <h2 className="techHeader">Technologies</h2>
+        <div className="techGrid">
+          <TechIcon />
+          <TechIcon />
+          <TechIcon />
+          <TechIcon />
+          <TechIcon />
+        </div>
+      </div>
+      <div className="softwareContainer">
+        <h2 className="softwareHeader">Software</h2>
+        <TechIcon />
+        <TechIcon />
+        <TechIcon />
+      </div>
+    </div> */
+
+.aboutPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+}
+
+.aboutContainer {
+  align-self: center;
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  padding: 0 100px;
+}
+
+.aboutHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.separator {
+  background-color: var(--main-green);
+  border-radius: 1000px;
+  width: 195px;
+  height: 10px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.aboutText {
+  font-family: 'Averta', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.techContainer {
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  justify-self: center;
+}
+
+.techHeader {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 75px;
+}
+
+.softwareContainer {
+  grid-row: 2 / -1;
+  grid-column: 2 / -1;
+}

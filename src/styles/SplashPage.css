@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(white, rgba(0, 0, 0, 0.033));
+  /* background-image: radial-gradient(white, rgba(0, 0, 0, 0.033)); */
+  border-bottom: 1px solid black;
 }
 
 /* Have it black with a star effect, then on the check it out click, 
@@ -22,6 +23,6 @@ have a white gradient that takes over and transitions to about page */
 }
 
 .hello .name {
-  color: #32cd32;
+  color: var(--main-green);
   font-weight: 600;
 }
