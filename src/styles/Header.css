@@ -7,11 +7,30 @@ header.header {
   padding-right: 75px;
   background-color: #fff;
   /* box-shadow: 0 -5px 12px rgba(0, 0, 0, 0.188); */
-  gap: 75px;
+  gap: 50px;
   height: 50px;
 }
 
 header > a > p {
   font-size: 20px;
   font-weight: 500;
+}
+
+header > a {
+  padding: 7.5px 12.5px;
+  border-radius: 1000px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+header > a.active {
+  border: 2px solid var(--main-green);
+}
+
+header > a.active:hover {
+  border: 2px solid var(--main-green);
+}
+
+header > a:hover {
+  border: 2px solid var(--main-green-opaque);
 }
