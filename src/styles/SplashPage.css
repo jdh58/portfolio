@@ -1,10 +1,9 @@
-.splashPage {
-  height: 100vh;
+.splashPage.page {
+  min-height: calc(100vh - 50px);
   display: flex;
   align-items: center;
   justify-content: center;
   /* background-image: radial-gradient(white, rgba(0, 0, 0, 0.033)); */
-  border-bottom: 1px solid black;
 }
 
 /* Have it black with a star effect, then on the check it out click, 
