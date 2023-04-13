@@ -1,16 +1,16 @@
-/* <div className="project">
+/* div className="project">
       <div className="leftSide">
         <div className="projectPreview">
-          <img src="" alt="" className="previewImage" />
-          <img src="" alt="" className="previewImage" />
-          <img src="" alt="" className="previewImage" />
+          <div className="previewContainer">
+            <img src={Screenshot} alt="" className="previewImage" />
+          </div>
+          <div className="previewContainer">
+            <img src={Screenshot} alt="" className="previewImage" />
+          </div>
+          <div className="previewContainer">
+            <img src={Screenshot} alt="" className="previewImage" />
+          </div>
         </div>
-        <a href="" className="projectLink">
-          <p>Check it out</p> <img src="" alt="" className="linkIcon" />
-        </a>
-        <a href="" className="projectLink">
-          <p>GitHub Repo</p> <img src="" alt="" className="linkIcon" />
-        </a>
       </div>
       <div className="rightSide">
         <h2 className="projectHeader">Chirper - A Twitter Clone</h2>
@@ -20,24 +20,28 @@
         </p>
         <div className="coreTech">
           <h3 className="coreTechHeader">Core Technologies</h3>
-          <div className="coreTechIcons">
-            <TechIcon />
-            <TechIcon />
-            <TechIcon />
-          </div>
+          <div className="separator"></div>
+          <div className="coreTechIcons">{techIcons}</div>
         </div>
+        <a href="" className="projectLink">
+          <p>Check it out</p> <img src="" alt="" className="linkIcon" />
+        </a>
+        <a href="" className="projectLink">
+          <p>GitHub Repo</p> <img src="" alt="" className="linkIcon" />
+        </a>
       </div>
     </div> */
 
 .project {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  gap: 25px;
 }
 
-.leftSize {
+.leftSide {
   grid-column: 1 / 2;
   display: flex;
-  flex-direction: column;
 }
 
 .projectPreview {
@@ -53,16 +57,21 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.119);
   transition: 0.5s;
+}
+
+.previewContainer:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.119);
 }
 
 .previewContainer:nth-child(1) {
   z-index: 1;
-  transform: translateX(-22px) rotate(-4deg);
+  transform: scale(0.96) translateX(-44px) rotate(-2deg);
 }
 .previewContainer:nth-child(2) {
   z-index: 2;
-  transform: translateX(-12px) rotate(-2deg);
+  transform: scale(0.98) translateX(-22px) rotate(-1deg);
 }
 .previewContainer:nth-child(3) {
   z-index: 3;
@@ -73,13 +82,13 @@
 }
 
 .projectPreview:hover .previewContainer:nth-child(1) {
-  transform: scale(101.5%) translateX(-34px) rotate(-6deg);
+  transform: scale(101.5%) translateX(-50px) rotate(-3deg);
 }
 .projectPreview:hover .previewContainer:nth-child(2) {
-  transform: scale(101.5%) translateX(-16px) rotate(-2deg);
+  transform: scale(101.5%) translateX(-22px) rotate(-1deg);
 }
 .projectPreview:hover .previewContainer:nth-child(3) {
-  transform: scale(101.5%) translateX(2px) rotate(1deg);
+  transform: scale(101.5%) translateX(6px) rotate(1deg);
 }
 
 .previewContainer img {
@@ -88,6 +97,58 @@
   object-fit: cover;
 }
 
-.rightSize {
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   grid-column: 2 / -1;
+}
+
+.projectHeader {
+  font-size: 4rem;
+}
+
+.projectDescription {
+  font-family: 'Averta', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2rem;
+}
+
+.coreTech .coreTechHeader {
+  margin-top: auto;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.coreTech .coreTechIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coreTech .separator {
+  height: 4px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.coreTech {
+  margin-bottom: auto;
+}
+
+.project .links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project .projectLink {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 2.5rem;
+  width: fit-content;
+  padding: 10px;
+  margin-left: -10px;
+  transition: 0.5s;
 }

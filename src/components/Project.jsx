@@ -1,8 +1,13 @@
 import TechIcon from './TechIcon';
 import Screenshot from '../assets/screenshot.png';
+import Link from '../assets/Link.svg';
 import '../styles/Project.css';
 
-export default function Project() {
+export default function Project({ title, description, coreTech }) {
+  const techIcons = coreTech.map((iconInfo) => {
+    return <TechIcon name={iconInfo.name} imgURL={iconInfo.image} />;
+  });
+
   return (
     <div className="project">
       <div className="leftSide">
@@ -17,12 +22,6 @@ export default function Project() {
             <img src={Screenshot} alt="" className="previewImage" />
           </div>
         </div>
-        <a href="" className="projectLink">
-          <p>Check it out</p> <img src="" alt="" className="linkIcon" />
-        </a>
-        <a href="" className="projectLink">
-          <p>GitHub Repo</p> <img src="" alt="" className="linkIcon" />
-        </a>
       </div>
       <div className="rightSide">
         <h2 className="projectHeader">Chirper - A Twitter Clone</h2>
@@ -32,11 +31,16 @@ export default function Project() {
         </p>
         <div className="coreTech">
           <h3 className="coreTechHeader">Core Technologies</h3>
-          <div className="coreTechIcons">
-            <TechIcon />
-            <TechIcon />
-            <TechIcon />
-          </div>
+          <div className="separator"></div>
+          <div className="coreTechIcons">{techIcons}</div>
+        </div>
+        <div className="links">
+          <a href="" className="projectLink">
+            <p>Check it out</p> <img src={Link} alt="" className="linkIcon" />
+          </a>
+          <a href="" className="projectLink">
+            <p>GitHub Repo</p> <img src={Link} alt="" className="linkIcon" />
+          </a>
         </div>
       </div>
     </div>
