@@ -78,6 +78,8 @@
   width: 200px;
   height: 5rem;
   border: 2px solid black;
+  border-radius: 5px;
+
   overflow: hidden;
 }
 
@@ -137,12 +139,15 @@
   flex-direction: column;
   align-items: center;
 }
+.linksHeaderContainer .separator {
+  margin-bottom: 5px;
+}
 
 .linkContainer {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 260px;
+  width: 270px;
   transition: 0.3s;
 }
 

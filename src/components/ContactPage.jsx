@@ -3,6 +3,7 @@ import GitHub from '../assets/TechLogos/github.svg';
 import Twitter from '../assets/TechLogos/twitter.png';
 import Instagram from '../assets/TechLogos/instagram.png';
 import LinkedIn from '../assets/TechLogos/linkedin.svg';
+import Mail from '../assets/mail.svg';
 import '../styles/ContactPage.css';
 
 export default function ContactPage() {
@@ -26,27 +27,45 @@ export default function ContactPage() {
           <img src={Send} alt="" />
         </div>
       </form>
+
       <div className="personalLinks">
         <div className="linksHeaderContainer">
           <h1>My Links</h1>
           <div className="separator"></div>
         </div>
-        <div className="linkContainer">
+
+        <a
+          href="https://github.com/jdh58"
+          target="_blank"
+          className="linkContainer"
+        >
           <img src={GitHub} alt="" className="linkIcon" />
           <p className="linkName">github.com/jdh58</p>
-        </div>
-        <div className="linkContainer">
+        </a>
+        <a href="" target="_blank" className="linkContainer">
           <img src={LinkedIn} alt="" className="linkIcon" />
           <p className="linkName">linkedin.com/in/jonath-hawes-4</p>
-        </div>
-        <div className="linkContainer">
-          <img src={Twitter} alt="" className="linkIcon" />
-          <p className="linkName">twitter.com/jhawes58</p>
-        </div>
-        <div className="linkContainer">
+        </a>
+        <a
+          href="https://instagram.com/jhawes58"
+          target="_blank"
+          className="linkContainer"
+        >
           <img src={Instagram} alt="" className="linkIcon" />
           <p className="linkName">instagram.com/jhawes58</p>
-        </div>
+        </a>
+        <a
+          href="https://twitter.com/jhawes58"
+          target="_blank"
+          className="linkContainer"
+        >
+          <img src={Twitter} alt="" className="linkIcon" />
+          <p className="linkName">twitter.com/jhawes58</p>
+        </a>
+        <a href="mailto: jonathan@jonathanhawes.dev" className="linkContainer">
+          <img src={Mail} alt="" className="linkIcon" />
+          <p className="linkName">jonathan@jonathanhawes.dev</p>
+        </a>
       </div>
     </div>
   );
