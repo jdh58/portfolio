@@ -1,0 +1,64 @@
+/* div className="contactPage page">
+      <form action="" className="contactForm">
+        <legend className="formHeader">
+          <h1 className="contactHeader">Contact me</h1>
+          <div className="separator"></div>
+        </legend>
+        <input type="text" name="name" id="name" />
+        <input type="email" name="email" id="email" />
+        <textarea name="message" id="message"></textarea>
+      </form>
+    </div> */
+
+.contactPage {
+  padding: 75px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.formHeader h1 {
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+
+.formHeader .separator {
+  margin: 0;
+  margin-right: auto;
+  width: 260px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0 10px;
+  font-size: 2rem;
+  font-family: 'Averta', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: 1px solid var(--main-green);
+}
+
+.contactForm input {
+  height: 4rem;
+}
+
+.contactForm textarea {
+  padding: 5px 10px;
+  resize: none;
+  height: 200px;
+}

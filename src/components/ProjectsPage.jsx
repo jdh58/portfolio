@@ -36,7 +36,7 @@ export default function ProjectsPage() {
           coreTech={coreTechIcons1}
         />
         <Project
-          title="BrewView - Coffee Rating Mobile App"
+          title="CafeCritic - Coffee Rating Mobile App"
           description="Mobile app that lets you view coffee shops near you, read other's reviews, and write your own for anyone to see."
           coreTech={coreTechIcons2}
         />
