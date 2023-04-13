@@ -36,7 +36,11 @@ export default function Project({ title, description, coreTech }) {
             <div className="background"></div>
             <p>Check it out</p> <img src={Link} alt="" className="linkIcon" />
           </a>
-          <a href="" className="projectLink">
+          <a
+            href="https://github.com/jdh58/chirper"
+            target="_blank"
+            className="projectLink"
+          >
             <div className="background"></div>
             <p>GitHub Repo</p> <img src={Link} alt="" className="linkIcon" />
           </a>

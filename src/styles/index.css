@@ -205,6 +205,7 @@ table {
 
   --main-green: #32cd32;
   --main-green-opaque: #32cd327c;
+  --main-green-moreopaque: hsla(120, 61%, 50%, 0.2);
 }
 
 .page {
