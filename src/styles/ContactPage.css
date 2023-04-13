@@ -11,13 +11,19 @@
     </div> */
 
 .contactPage {
-  padding: 75px;
+  padding: 75px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  column-gap: 25px;
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 550px;
 }
 
 .formHeader {
@@ -26,7 +32,7 @@
   justify-content: start;
 }
 
-.formHeader h1 {
+.contactPage h1 {
   font-weight: 600;
   font-size: 4.5rem;
 }
@@ -61,4 +67,95 @@
   padding: 5px 10px;
   resize: none;
   height: 200px;
+}
+
+.contactForm .buttonContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 7.5px;
+  margin: auto;
+  width: 200px;
+  height: 5rem;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.buttonContainer button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  height: 100%;
+  font-family: 'Gilroy', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.buttonContainer > img {
+  width: 30px;
+  transition: 0.2s;
+}
+
+.buttonContainer .background {
+  position: absolute;
+  background-color: var(--main-green-opaque);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: 0.2s;
+}
+
+.buttonContainer:hover .background {
+  transform: none;
+}
+
+.buttonContainer:hover {
+  cursor: pointer;
+}
+
+.buttonContainer button {
+  cursor: pointer;
+}
+
+.buttonContainer:hover > img {
+  transform: rotate(45deg);
+}
+
+.personalLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.linksHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 260px;
+  transition: 0.3s;
+}
+
+.linkContainer:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.linkContainer > p {
+  font-size: 2rem;
+}
+
+.linkContainer > .linkIcon {
+  width: 50px;
+  height: 50px;
 }
