@@ -143,6 +143,7 @@
 }
 
 .project .projectLink {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -151,4 +152,19 @@
   padding: 10px;
   margin-left: -10px;
   transition: 0.5s;
+  overflow: hidden;
+}
+
+.projectLink .background {
+  position: absolute;
+  background-color: hsla(120, 61%, 50%, 0.2);
+  width: 100%;
+  height: 100%;
+  margin-left: -10px;
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.projectLink:hover .background {
+  transform: translate(0%);
 }

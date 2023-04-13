@@ -36,9 +36,11 @@ export default function Project({ title, description, coreTech }) {
         </div>
         <div className="links">
           <a href="" className="projectLink">
+            <div className="background"></div>
             <p>Check it out</p> <img src={Link} alt="" className="linkIcon" />
           </a>
           <a href="" className="projectLink">
+            <div className="background"></div>
             <p>GitHub Repo</p> <img src={Link} alt="" className="linkIcon" />
           </a>
         </div>
