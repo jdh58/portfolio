@@ -1,4 +1,5 @@
 import Project from './Project';
+import '../styles/ProjectsPage.css';
 
 export default function ProjectsPage() {
   return (
@@ -7,7 +8,6 @@ export default function ProjectsPage() {
         <h1 className="projectPageHeader">Projects</h1>
         <div className="separator"></div>
       </div>
-      <Project />
       <Project />
     </div>
   );

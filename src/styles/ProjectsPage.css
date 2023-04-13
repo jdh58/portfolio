@@ -1,0 +1,26 @@
+/* <div className="projectsPage page">
+      <div className="projectPageHeaderContainer">
+        <h1 className="projectPageHeader">Projects</h1>
+        <div className="separator"></div>
+      </div>
+      <Project />
+      <Project />
+    </div> */
+
+.projectsPage {
+  padding: 0 100px;
+}
+
+.projectPageHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.projectPageHeader {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 75px;
+}

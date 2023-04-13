@@ -1,0 +1,93 @@
+/* <div className="project">
+      <div className="leftSide">
+        <div className="projectPreview">
+          <img src="" alt="" className="previewImage" />
+          <img src="" alt="" className="previewImage" />
+          <img src="" alt="" className="previewImage" />
+        </div>
+        <a href="" className="projectLink">
+          <p>Check it out</p> <img src="" alt="" className="linkIcon" />
+        </a>
+        <a href="" className="projectLink">
+          <p>GitHub Repo</p> <img src="" alt="" className="linkIcon" />
+        </a>
+      </div>
+      <div className="rightSide">
+        <h2 className="projectHeader">Chirper - A Twitter Clone</h2>
+        <p className="projectDescription">
+          Fullstack recreation of the Twitter website. Nearly all of the
+          functionality has been recreated.
+        </p>
+        <div className="coreTech">
+          <h3 className="coreTechHeader">Core Technologies</h3>
+          <div className="coreTechIcons">
+            <TechIcon />
+            <TechIcon />
+            <TechIcon />
+          </div>
+        </div>
+      </div>
+    </div> */
+
+.project {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.leftSize {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectPreview {
+  position: relative;
+  width: 700px;
+  height: 395.5px;
+}
+
+.previewContainer {
+  overflow: hidden;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.previewContainer:nth-child(1) {
+  z-index: 1;
+  transform: translateX(-22px) rotate(-4deg);
+}
+.previewContainer:nth-child(2) {
+  z-index: 2;
+  transform: translateX(-12px) rotate(-2deg);
+}
+.previewContainer:nth-child(3) {
+  z-index: 3;
+}
+
+.projectPreview:hover {
+  cursor: pointer;
+}
+
+.projectPreview:hover .previewContainer:nth-child(1) {
+  transform: scale(101.5%) translateX(-34px) rotate(-6deg);
+}
+.projectPreview:hover .previewContainer:nth-child(2) {
+  transform: scale(101.5%) translateX(-16px) rotate(-2deg);
+}
+.projectPreview:hover .previewContainer:nth-child(3) {
+  transform: scale(101.5%) translateX(2px) rotate(1deg);
+}
+
+.previewContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rightSize {
+  grid-column: 2 / -1;
+}

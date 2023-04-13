@@ -1,13 +1,21 @@
 import TechIcon from './TechIcon';
+import Screenshot from '../assets/screenshot.png';
+import '../styles/Project.css';
 
 export default function Project() {
   return (
     <div className="project">
       <div className="leftSide">
         <div className="projectPreview">
-          <img src="" alt="" className="previewImage" />
-          <img src="" alt="" className="previewImage" />
-          <img src="" alt="" className="previewImage" />
+          <div className="previewContainer">
+            <img src={Screenshot} alt="" className="previewImage" />
+          </div>
+          <div className="previewContainer">
+            <img src={Screenshot} alt="" className="previewImage" />
+          </div>
+          <div className="previewContainer">
+            <img src={Screenshot} alt="" className="previewImage" />
+          </div>
         </div>
         <a href="" className="projectLink">
           <p>Check it out</p> <img src="" alt="" className="linkIcon" />
