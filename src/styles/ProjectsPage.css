@@ -8,7 +8,7 @@
     </div> */
 
 .projectsPage {
-  padding: 0 100px;
+  padding: 75px 100px;
 }
 
 .projectPageHeaderContainer {
@@ -22,5 +22,10 @@
 .projectPageHeader {
   font-size: 5rem;
   font-weight: 600;
-  margin-top: 75px;
+}
+
+.projectSection {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }

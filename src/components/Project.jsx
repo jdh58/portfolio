@@ -24,11 +24,8 @@ export default function Project({ title, description, coreTech }) {
         </div>
       </div>
       <div className="rightSide">
-        <h2 className="projectHeader">Chirper - A Twitter Clone</h2>
-        <p className="projectDescription">
-          Fullstack recreation of the Twitter website. Nearly all of the
-          functionality has been recreated.
-        </p>
+        <h2 className="projectHeader">{title}</h2>
+        <p className="projectDescription">{description}</p>
         <div className="coreTech">
           <h3 className="coreTechHeader">Core Technologies</h3>
           <div className="separator"></div>
