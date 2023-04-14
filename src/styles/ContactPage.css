@@ -170,6 +170,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 1fr;
     row-gap: 5px;
+    padding: 75px 0;
   }
 
   .contactForm {
@@ -181,11 +182,52 @@
   .personalLinks {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    align-self: center;
+    justify-self: center;
   }
 }
 
 @media (max-width: 900px) {
   .contactForm {
     min-width: 600px;
+  }
+  .personalLinks {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 100px;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 810px) {
+  .formHeader h1 {
+    font-size: 3.5rem;
+  }
+
+  .formHeader .separator {
+    width: 200px;
+    height: 8px;
+  }
+
+  .linksHeaderContainer h1 {
+    font-size: 3.5rem;
+  }
+
+  .linksHeaderContainer .separator {
+    width: 150px;
+    height: 8px;
+  }
+
+  .linkContainer > .linkIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .linkContainer > p {
+    font-size: 1.9rem;
   }
 }

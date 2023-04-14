@@ -284,6 +284,10 @@
     height: calc(500px * 0.5625);
   }
 
+  .projectPage .projectPageContainer .projectPageHeader {
+    font-size: 1rem;
+  }
+
   .projectHeader {
     font-size: 3rem;
   }
@@ -310,5 +314,12 @@
 
   .project .projectLink > img {
     width: 20px;
+  }
+}
+
+@media (max-width: 719px) {
+  .projectPreview {
+    width: 450px;
+    height: calc(450px * 0.5625);
   }
 }

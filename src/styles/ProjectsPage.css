@@ -29,3 +29,14 @@
   flex-direction: column;
   gap: 125px;
 }
+
+@media (max-width: 810px) {
+  .projectPageHeader {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 719px) {
+  .projectPageHeader {
+    font-size: 4.25rem;
+  }
+}
