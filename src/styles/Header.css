@@ -26,14 +26,6 @@ header > a {
   border: 2px solid transparent;
 }
 
-header > a.active {
-  border: 2px solid var(--main-green);
-}
-
-header > a.active:hover {
-  border: 2px solid var(--main-green);
-}
-
 header > a:hover {
   border: 2px solid var(--main-green-opaque);
 }

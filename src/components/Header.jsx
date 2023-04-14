@@ -10,27 +10,33 @@ export default function Header() {
     <header className="header">
       <a
         href="#aboutPage"
-        className={currentTab === 'about' ? 'About active' : 'about'}
+        className="about"
         onClick={() => {
-          setCurrentTab('about');
+          document
+            .querySelector('.aboutPage')
+            .scrollIntoView({ behavior: 'smooth' });
         }}
       >
         <p>About</p>
       </a>
       <a
         href="#projectsPage"
-        className={currentTab === 'projects' ? 'projects active' : 'projects'}
+        className="projects"
         onClick={() => {
-          setCurrentTab('projects');
+          document
+            .querySelector('.projectsPage')
+            .scrollIntoView({ behavior: 'smooth' });
         }}
       >
         <p>Projects</p>
       </a>
       <a
         href="#contactPage"
-        className={currentTab === 'contact' ? 'contact active' : 'contact'}
+        className="contact"
         onClick={() => {
-          setCurrentTab('contact');
+          document
+            .querySelector('.contactPage')
+            .scrollIntoView({ behavior: 'smooth' });
         }}
       >
         <p>Contact</p>
