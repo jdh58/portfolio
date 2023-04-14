@@ -14,20 +14,21 @@ header.header {
   z-index: 4;
 }
 
-header > a > p {
+header > div > p {
   font-size: 2rem;
   font-weight: 500;
 }
 
-header > a {
+header > div {
   padding: 7.5px 12.5px;
   border-radius: 1000px;
   transition: 0.3s;
   border: 2px solid transparent;
 }
 
-header > a:hover {
+header > div:hover {
   border: 2px solid var(--main-green-opaque);
+  cursor: pointer;
 }
 
 @media (max-width: 575px) {
@@ -42,7 +43,7 @@ header > a:hover {
     padding: 0;
   }
 
-  .header > a > p {
+  .header > div > p {
     font-size: 2.5rem;
   }
 }
