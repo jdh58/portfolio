@@ -120,7 +120,7 @@
 }
 
 .buttonContainer button {
-  cursor: pointer;
+  color: black;
 }
 
 .buttonContainer:hover > img {
@@ -170,13 +170,16 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 1fr;
     row-gap: 5px;
-    padding: 75px 0;
+    padding: 75px 0px;
   }
 
   .contactForm {
     align-self: center;
     justify-self: center;
-    min-width: 700px;
+    width: 100%;
+    min-width: none;
+    max-width: 700px;
+    padding: 0 25px;
   }
 
   .personalLinks {
@@ -190,7 +193,6 @@
 
 @media (max-width: 900px) {
   .contactForm {
-    min-width: 600px;
   }
   .personalLinks {
     margin-top: 75px;
@@ -200,6 +202,10 @@
     column-gap: 100px;
     align-self: center;
     justify-self: center;
+  }
+
+  .personalLinks .linkContainer {
+    justify-content: center;
   }
 }
 
@@ -229,5 +235,34 @@
 
   .linkContainer > p {
     font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .formHeader h1 {
+    font-size: 3rem;
+  }
+
+  .formHeader .separator {
+    width: 170px;
+    height: 6px;
+  }
+
+  .linksHeaderContainer h1 {
+    font-size: 3rem;
+  }
+
+  .linksHeaderContainer .separator {
+    width: 125px;
+    height: 6px;
+  }
+
+  .linkContainer > .linkIcon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .linkContainer > p {
+    font-size: 1.8rem;
   }
 }

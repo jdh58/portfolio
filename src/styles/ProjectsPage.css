@@ -39,4 +39,26 @@
   .projectPageHeader {
     font-size: 4.25rem;
   }
+
+  .projectsPage {
+    padding: 75px 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .projectsPage {
+    padding: 75px 25px;
+  }
+
+  .projectPageHeaderContainer {
+    margin-bottom: 50px;
+  }
+
+  .projectPageHeader {
+    font-size: 4rem;
+  }
+
+  .projectSection {
+    gap: 75px;
+  }
 }

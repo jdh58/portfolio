@@ -18,7 +18,7 @@ have a white gradient that takes over and transitions to about page */
 
 .splashText .hello {
   display: flex;
-  gap: 25px;
+  gap: 0.5ch;
 }
 
 .hello .name {
@@ -35,5 +35,17 @@ have a white gradient that takes over and transitions to about page */
 @media (max-width: 719px) {
   .splashText {
     font-size: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .splashPage.page {
+    height: 100vh;
+  }
+
+  .splashText {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 3rem;
   }
 }

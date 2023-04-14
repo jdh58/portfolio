@@ -284,7 +284,7 @@
     height: calc(500px * 0.5625);
   }
 
-  .projectPage .projectPageContainer .projectPageHeader {
+  .projectPageHeader {
     font-size: 1rem;
   }
 
@@ -321,5 +321,62 @@
   .projectPreview {
     width: 450px;
     height: calc(450px * 0.5625);
+  }
+}
+@media (max-width: 703px) {
+  .projectPreview {
+    width: 400px;
+    height: calc(400px * 0.5625);
+  }
+}
+
+@media (max-width: 575px) {
+  .projectPreview {
+    width: 300px;
+    height: calc(300px * 0.5625);
+  }
+
+  .project:nth-child(odd) .projectPreview {
+    margin-left: 25px;
+  }
+  .project:nth-child(even) .projectPreview {
+    margin-right: 25px;
+  }
+
+  .projectHeader {
+    font-size: 2.75rem;
+  }
+
+  .projectDescription {
+    font-size: 1.75rem;
+  }
+
+  .coreTech .coreTechHeader {
+    font-size: 2.25rem;
+  }
+
+  .coreTech .separator {
+    width: 200px;
+  }
+
+  .project .links {
+    gap: 15px;
+  }
+
+  .project .projectLink {
+    font-size: 2rem;
+  }
+
+  .project .projectLink > img {
+    width: 18px;
+  }
+
+  .coreTech .coreTechIcons .iconContainer > img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .coreTech .coreTechIcons .techIcon .technologyName {
+    font-size: 1.2rem;
   }
 }

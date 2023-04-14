@@ -121,4 +121,45 @@
     width: 175px;
     height: 8px;
   }
+
+  .aboutText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutPage.page {
+    padding: 5px;
+  }
+
+  .aboutContainer {
+    padding: 10px;
+  }
+
+  .aboutPage h1,
+  .aboutPage h2 {
+    font-size: 3rem;
+  }
+
+  .aboutPage .separator {
+    width: 150px;
+    height: 6px;
+  }
+
+  .aboutText {
+    text-align: center;
+  }
+
+  .aboutPage .iconContainer > img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .aboutPage .techIcon .technologyName {
+    font-size: 1.2rem;
+  }
+  .aboutPage .techGrid {
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+    grid-auto-rows: 85px;
+  }
 }

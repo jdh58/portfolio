@@ -15,7 +15,7 @@ header.header {
 }
 
 header > a > p {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -28,4 +28,21 @@ header > a {
 
 header > a:hover {
   border: 2px solid var(--main-green-opaque);
+}
+
+@media (max-width: 575px) {
+  header.header {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+  }
+
+  .header > a > p {
+    font-size: 2.5rem;
+  }
 }
