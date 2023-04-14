@@ -1,15 +1,3 @@
-/* div className="contactPage page">
-      <form action="" className="contactForm">
-        <legend className="formHeader">
-          <h1 className="contactHeader">Contact me</h1>
-          <div className="separator"></div>
-        </legend>
-        <input type="text" name="name" id="name" />
-        <input type="email" name="email" id="email" />
-        <textarea name="message" id="message"></textarea>
-      </form>
-    </div> */
-
 .contactPage {
   padding: 75px 100px;
   display: grid;
@@ -192,8 +180,6 @@
 }
 
 @media (max-width: 900px) {
-  .contactForm {
-  }
   .personalLinks {
     margin-top: 75px;
     display: grid;
