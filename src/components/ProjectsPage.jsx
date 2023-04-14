@@ -27,12 +27,11 @@ export default function ProjectsPage() {
     <div className="projectsPage page">
       <div className="projectPageHeaderContainer">
         <h1 className="projectPageHeader">Projects</h1>
-        {/* <div className="separator"></div> */}
       </div>
       <div className="projectSection">
         <Project
           title="Chirper - A Twitter Clone"
-          description="Fullstack recreation of the Twitter website. Nearly all of the functionality has been recreated."
+          description="Full-stack recreation of the Twitter website. Nearly all of the functionality has been recreated."
           coreTech={coreTechIcons1}
         />
         <Project
