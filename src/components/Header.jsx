@@ -4,8 +4,7 @@ import '../styles/Header.css';
 export default function Header() {
   return (
     <header className="header">
-      <a
-        href="#aboutPage"
+      <div
         className="about"
         onClick={() => {
           document
@@ -14,9 +13,8 @@ export default function Header() {
         }}
       >
         <p>About</p>
-      </a>
-      <a
-        href="#projectsPage"
+      </div>
+      <div
         className="projects"
         onClick={() => {
           document
@@ -25,9 +23,8 @@ export default function Header() {
         }}
       >
         <p>Projects</p>
-      </a>
-      <a
-        href="#contactPage"
+      </div>
+      <div
         className="contact"
         onClick={() => {
           document
@@ -36,7 +33,7 @@ export default function Header() {
         }}
       >
         <p>Contact</p>
-      </a>
+      </div>
     </header>
   );
 }
