@@ -25,3 +25,9 @@ have a white gradient that takes over and transitions to about page */
   color: var(--main-green);
   font-weight: 600;
 }
+
+@media (max-width: 900px) {
+  .splashText {
+    font-size: 6rem;
+  }
+}
