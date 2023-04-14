@@ -64,3 +64,33 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: 110px;
 }
+
+@media (max-width: 1300px) {
+  .aboutPage .iconContainer > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .aboutPage .techIcon .technologyName {
+    font-size: 1.3rem;
+  }
+
+  .aboutPage .techGrid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+    grid-auto-rows: 95px;
+  }
+}
+
+@media (max-width: 1149px) {
+  .aboutPage.page {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 110px;
+  }
+
+  .techGrid {
+    margin-bottom: 35px;
+  }
+}

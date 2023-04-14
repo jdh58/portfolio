@@ -2,10 +2,6 @@ import { useState } from 'react';
 import '../styles/Header.css';
 
 export default function Header() {
-  const [currentTab, setCurrentTab] = useState(null);
-
-  //TODO: have the onclick just scroll, and set the currenttab based off scroll position
-
   return (
     <header className="header">
       <a

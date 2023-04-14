@@ -216,3 +216,33 @@
 .project:nth-child(even) .projectPreview:hover .previewContainer:nth-child(3) {
   transform: scale(101.5%) translateX(-6px) rotate(-1deg);
 }
+
+@media (max-width: 1153px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project .leftSide {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .project .rightSide {
+    gap: 30px;
+  }
+
+  .project .links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .project .coreTech .separator {
+    margin-bottom: 20px;
+  }
+
+  .project .coreTech {
+    margin-bottom: 5px;
+  }
+}

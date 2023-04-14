@@ -211,3 +211,12 @@ table {
 .page {
   min-height: 100vh;
 }
+
+body {
+  /* background-color: black;
+  color: white; */
+}
+
+body button {
+  /* color: white; */
+}
