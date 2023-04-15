@@ -10,8 +10,11 @@
 .contactForm {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   gap: 25px;
-  max-width: 550px;
+  min-width: 550px;
+  width: 80%;
+  max-width: 1000px;
 }
 
 .formHeader {

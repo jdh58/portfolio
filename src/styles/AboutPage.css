@@ -2,13 +2,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+  padding-left: 50px;
+  padding-right: 25px;
+  max-width: 1800px;
+  margin: auto;
 }
 
 .aboutContainer {
   align-self: center;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
-  padding: 0 75px;
+  margin-right: 25px;
 }
 
 .aboutHeader {
@@ -87,6 +91,10 @@
     flex-direction: column;
     gap: 50px;
     padding: 75px 110px;
+  }
+
+  .aboutContainer {
+    margin: 0;
   }
 
   .techGrid {

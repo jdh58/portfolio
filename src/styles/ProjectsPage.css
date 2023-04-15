@@ -1,5 +1,7 @@
 .projectsPage {
   padding: 75px 100px;
+  max-width: 1700px;
+  margin: auto;
 }
 
 .projectPageHeaderContainer {
