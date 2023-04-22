@@ -27,6 +27,11 @@
   .projectPageHeader {
     font-size: 4.5rem;
   }
+
+  .projectPageHeaderContainer .separator {
+    height: 8px;
+    width: 175px;
+  }
 }
 @media (max-width: 719px) {
   .projectPageHeader {
@@ -53,5 +58,10 @@
 
   .projectSection {
     gap: 75px;
+  }
+
+  .projectPageHeaderContainer .separator {
+    height: 6px;
+    width: 160px;
   }
 }

@@ -27,6 +27,7 @@ export default function ProjectsPage() {
     <div className="projectsPage page">
       <div className="projectPageHeaderContainer">
         <h1 className="projectPageHeader">Projects</h1>
+        <div className="separator"></div>
       </div>
       <div className="projectSection">
         <Project

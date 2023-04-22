@@ -1,6 +1,7 @@
 import TechIcon from './TechIcon';
 import Screenshot from '../assets/screenshot.png';
 import Link from '../assets/Link.svg';
+import GitHub from '../assets/TechLogos/github.svg';
 import '../styles/Project.css';
 
 export default function Project({ title, description, coreTech }) {
@@ -42,7 +43,7 @@ export default function Project({ title, description, coreTech }) {
             className="projectLink"
           >
             <div className="background"></div>
-            <p>GitHub Repo</p> <img src={Link} alt="" className="linkIcon" />
+            <p>GitHub Repo</p> <img src={GitHub} alt="" className="linkIcon" />
           </a>
         </div>
       </div>
