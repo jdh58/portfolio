@@ -63,6 +63,7 @@ export default function ProjectsPage() {
           title="RLStatSaver"
           description="A Rocket League plugin that tracks player stats and saves them to a custom .csv file after each game."
           coreTech={coreTechIcons2}
+          video={null}
           screenshots={screenshots2}
           livePreview={'https://github.com/jdh58/rl-stat-saver'}
           github={'https://github.com/jdh58/rl-stat-saver'}

@@ -30,11 +30,13 @@ export default function Project({
       <div className="leftSide">
         <div className="projectPreview">
           {screenshotList}
-          <div className="previewContainer">
-            <video width="100%" autoPlay muted loop>
-              <source src={video} type="video/mp4" />
-            </video>
-          </div>
+          {video === null ? null : (
+            <div className="previewContainer">
+              <video width="100%" autoPlay muted loop>
+                <source src={video} type="video/mp4" />
+              </video>
+            </div>
+          )}
         </div>
       </div>
       <div className="rightSide">
