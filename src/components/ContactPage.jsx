@@ -4,15 +4,32 @@ import Twitter from '../assets/TechLogos/twitter.png';
 import LinkedIn from '../assets/TechLogos/linkedin.svg';
 import Mail from '../assets/mail.svg';
 import app from '../firebaseconfig';
+import { addDoc, getFirestore, collection } from 'firebase/firestore';
 import '../styles/ContactPage.css';
+import { useEffect, useState } from 'react';
 
-export default function ContactPage() {
-  const handleFormSubmit = (e) => {
+export default function ContactPage({ displayToast }) {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     const form = e.target;
 
-    console.log(form);
+    // Save and clear the inputs
+    const name = form.elements['name'].value;
+    const email = form.elements['email'].value;
+    const message = form.elements['message'].value;
+
+    form.elements['name'].value = '';
+    form.elements['email'].value = '';
+    form.elements['message'].value = '';
+
+    await addDoc(collection(getFirestore(app), 'messages'), {
+      name,
+      email,
+      message,
+    });
+
+    displayToast(['Your message was sent.', 3000]);
   };
 
   return (
