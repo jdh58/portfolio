@@ -24,6 +24,7 @@
   z-index: 11;
   border-radius: 1000px;
   padding: 5px;
+  background-color: #ffffff;
 }
 
 .overlay.projectOverlay .closeContainer img {
@@ -33,7 +34,7 @@
 
 .overlay.projectOverlay .closeContainer:hover {
   cursor: pointer;
-  background-color: #0000002b;
+  background-color: #ffffffbf;
 }
 
 .overlay.projectOverlay .previewContainer {
@@ -47,4 +48,54 @@
 .overlay.projectOverlay .previewContainer video,
 .overlay.projectOverlay .previewContainer img {
   border-radius: 10px;
+}
+
+@media (max-width: 1050px) {
+  .overlay.projectOverlay .previewContainer {
+    width: 800px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 960px) {
+  .overlay.projectOverlay .previewContainer {
+    width: 700px;
+    height: 393.75px;
+  }
+}
+@media (max-width: 860px) {
+  .overlay.projectOverlay .previewContainer {
+    width: 600px;
+    height: 337.5px;
+  }
+}
+@media (max-width: 760px) {
+  .overlay.projectOverlay .previewContainer {
+    width: 500px;
+    height: 281.25px;
+  }
+}
+
+@media (max-width: 660px) {
+  .overlay.projectOverlay .closeContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 11;
+    border-radius: 1000px;
+    padding: 5px;
+  }
+  .overlay.projectOverlay .previewContainer {
+    width: 550px;
+    height: 309.375px;
+  }
+}
+
+@media (max-width: 560px) {
+  .overlay.projectOverlay .previewContainer {
+    width: 95%;
+    height: calc(95% * 0.5625);
+  }
 }

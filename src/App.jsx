@@ -12,7 +12,7 @@ function App() {
   const [overlay, setOverlay] = useState({});
 
   useEffect(() => {
-    if (typeof overlay.name === 'sting') {
+    if (typeof overlay.name === 'string') {
       document.body.style = 'overflow: hidden';
     } else {
       document.body.style = 'overflow: auto';
