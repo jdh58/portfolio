@@ -60,9 +60,10 @@
   height: 200px;
 }
 
-.contactForm .buttonContainer {
+.contactForm button {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 7.5px;
   margin: auto;
@@ -70,11 +71,11 @@
   height: 5rem;
   border: 2px solid black;
   border-radius: 5px;
-
+  background-color: #ffffff00;
   overflow: hidden;
 }
 
-.buttonContainer button {
+button div {
   padding: 0;
   margin: 0;
   background: transparent;
@@ -87,12 +88,12 @@
   font-weight: 500;
 }
 
-.buttonContainer > img {
+button > img {
   width: 30px;
   transition: 0.2s;
 }
 
-.buttonContainer .background {
+button .background {
   position: absolute;
   background-color: var(--main-green-opaque);
   z-index: -1;
@@ -102,15 +103,17 @@
   transition: 0.2s;
 }
 
-.buttonContainer:hover .background {
+button:hover .background {
   transform: none;
 }
 
-.buttonContainer:hover {
+button:hover {
   cursor: pointer;
 }
 
-.buttonContainer button {
+button .buttonText {
+  display: flex;
+  align-items: center;
   color: black;
 }
 

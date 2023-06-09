@@ -3,12 +3,21 @@ import GitHub from '../assets/TechLogos/github.svg';
 import Twitter from '../assets/TechLogos/twitter.png';
 import LinkedIn from '../assets/TechLogos/linkedin.svg';
 import Mail from '../assets/mail.svg';
+import app from '../firebaseconfig';
 import '../styles/ContactPage.css';
 
 export default function ContactPage() {
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    console.log(form);
+  };
+
   return (
     <div className="contactPage page">
-      <form action="" className="contactForm">
+      <form action="" className="contactForm" onSubmit={handleFormSubmit}>
         <legend className="formHeader">
           <h1>Contact me</h1>
           <div className="separator"></div>
@@ -20,11 +29,11 @@ export default function ContactPage() {
           id="message"
           placeholder="Your message..."
         ></textarea>
-        <div className="buttonContainer">
+        <button type="submit" className="buttonContainer">
           <div className="background"></div>
-          <button type="submit">Send Message</button>
+          <div className="buttonText">Send Message</div>
           <img src={Send} alt="" />
-        </div>
+        </button>
       </form>
 
       <div className="personalLinks">
