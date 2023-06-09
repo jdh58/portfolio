@@ -15,12 +15,37 @@
   margin-right: 25px;
 }
 
+.aboutContainer .portraitContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  padding: 3px;
+  height: min-content;
+  background-color: rgb(56, 192, 112);
+  border-radius: 1000px;
+}
+
+.aboutContainer .portrait {
+  width: 100%;
+  border-radius: 1000px;
+}
+
 .aboutHeader {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  gap: 30px;
   align-items: center;
   font-weight: 600;
   font-size: 4rem;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .separator {

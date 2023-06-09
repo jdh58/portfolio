@@ -22,6 +22,7 @@ import TS from '../assets/TechLogos/typescript.svg';
 import Vim from '../assets/TechLogos/vim.svg';
 import VSCode from '../assets/TechLogos/vscode.svg';
 import Webpack from '../assets/TechLogos/webpack.png';
+import MyPic from '../assets/mypic.png';
 import '../styles/AboutPage.css';
 
 export default function AboutPage() {
@@ -29,16 +30,20 @@ export default function AboutPage() {
     <div className="aboutPage page">
       <div className="aboutContainer">
         <div className="aboutHeader">
-          <img src="" alt="" className="portrait" />
-          <h1>About Me</h1>
+          <div className="portraitContainer">
+            <img src={MyPic} alt="" className="portrait" />
+          </div>
+          <div className="headerContainer">
+            <h1>About Me</h1>
+            <div className="separator"></div>
+          </div>
         </div>
-        <div className="separator"></div>
         <div className="aboutText">
           I'm a software developer in Portland, Oregon. I hold an Associate of
           Science in Computer Science, and am currently pursuing the Bachelor's
           at Portland State University. Outside of my education, I have been
-          learning web development and building projects. This site serves as my
-          personal portfolio and hosts said projects. Please enjoy!
+          learning more about development and building projects. This site
+          serves as my personal portfolio and hosts said projects. Please enjoy!
         </div>
       </div>
       <div className="techContainer">

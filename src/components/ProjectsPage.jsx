@@ -32,7 +32,7 @@ export default function ProjectsPage() {
       <div className="projectSection">
         <Project
           title="Chirper - A Twitter Clone"
-          description="Full-stack recreation of the Twitter website. Nearly all of the functionality has been recreated."
+          description="Full recreation of the Twitter website. Nearly all of the functionality has been recreated."
           coreTech={coreTechIcons1}
         />
         <Project
