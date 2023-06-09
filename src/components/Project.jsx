@@ -2,6 +2,7 @@ import TechIcon from './TechIcon';
 import Screenshot from '../assets/screenshot.png';
 import Link from '../assets/Link.svg';
 import GitHub from '../assets/TechLogos/github.svg';
+import { v4 as uuidv4 } from 'uuid';
 import '../styles/Project.css';
 
 export default function Project({
@@ -15,12 +16,14 @@ export default function Project({
   setOverlay,
 }) {
   const techIcons = coreTech.map((iconInfo) => {
-    return <TechIcon name={iconInfo.name} imgURL={iconInfo.image} />;
+    return (
+      <TechIcon name={iconInfo.name} imgURL={iconInfo.image} key={uuidv4()} />
+    );
   });
 
   const screenshotList = screenshots.map((ss) => {
     return (
-      <div className="previewContainer">
+      <div className="previewContainer" key={uuidv4()}>
         <img src={ss} alt="" className="previewImage" />
       </div>
     );

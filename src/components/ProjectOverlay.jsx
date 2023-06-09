@@ -1,10 +1,11 @@
 import Close from '../assets/close.svg';
+import { v4 as uuidv4 } from 'uuid';
 import '../styles/ProjectOverlay.css';
 
 export default function ProjectOverlay({ setOverlay, video, screenshots }) {
   const screenshotList = screenshots.map((ss) => {
     return (
-      <div className="previewContainer">
+      <div className="previewContainer" key={uuidv4()}>
         <img src={ss} alt="" className="previewImage" />
       </div>
     );
