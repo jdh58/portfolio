@@ -9,6 +9,15 @@ import CPP from '../assets/TechLogos/cpp.svg';
 import MYSQL from '../assets/TechLogos/mysql.png';
 import VS from '../assets/TechLogos/visualstudio.svg';
 
+import chirper1 from '../assets/chirper1.png';
+import chirper2 from '../assets/chirper2.png';
+import chirper3 from '../assets/chirper3.png';
+import chirperVideo from '../assets/chirperPreview.webm';
+
+import rlstat1 from '../assets/rlstat1.png';
+import rlstat2 from '../assets/rlstat2.png';
+import rlstat3 from '../assets/rlstat3.png';
+
 import Jest from '../assets/TechLogos/jest.png';
 import '../styles/ProjectsPage.css';
 
@@ -20,16 +29,19 @@ export default function ProjectsPage() {
     { name: 'Firebase', image: Firebase },
   ];
   const coreTechIcons2 = [
+    { name: 'C++', image: CPP },
+    { name: 'MYSQL', image: MYSQL },
+    { name: 'VS', image: VS },
+  ];
+  const coreTechIcons3 = [
     { name: 'Typescript', image: TS },
     { name: 'Native', image: React },
     { name: 'Express', image: Express },
     { name: 'MongoDB', image: MongoDB },
   ];
-  const coreTechIcons3 = [
-    { name: 'C++', image: CPP },
-    { name: 'MYSQL', image: MYSQL },
-    { name: 'VS', image: VS },
-  ];
+
+  const screenshots1 = [chirper3, chirper2];
+  const screenshots2 = [rlstat3, rlstat2, rlstat1];
 
   return (
     <div className="projectsPage page">
@@ -42,11 +54,18 @@ export default function ProjectsPage() {
           title="Chirper - A Twitter Clone"
           description="Full recreation of the Twitter website. Nearly all of the functionality has been recreated."
           coreTech={coreTechIcons1}
+          video={chirperVideo}
+          screenshots={screenshots1}
+          livePreview={'https://github.com/jdh58/chirper'}
+          github={'https://github.com/jdh58/chirper'}
         />
         <Project
-          title="CafeCritic - Coffee Rating Mobile App"
-          description="Mobile app that lets you view coffee shops near you, read other's reviews, and write your own for anyone to see."
-          coreTech={coreTechIcons3}
+          title="RLStatSaver"
+          description="A Rocket League plugin that tracks player stats and saves them to a custom .csv file after each game."
+          coreTech={coreTechIcons2}
+          screenshots={screenshots2}
+          livePreview={'https://github.com/jdh58/rl-stat-saver'}
+          github={'https://github.com/jdh58/rl-stat-saver'}
         />
       </div>
     </div>
