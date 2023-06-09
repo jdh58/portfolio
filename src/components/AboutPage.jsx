@@ -23,6 +23,7 @@ import Vim from '../assets/TechLogos/vim.svg';
 import VSCode from '../assets/TechLogos/vscode.svg';
 import Webpack from '../assets/TechLogos/webpack.png';
 import MyPic from '../assets/mypic.png';
+import VS from '../assets/TechLogos/visualstudio.svg';
 import '../styles/AboutPage.css';
 
 export default function AboutPage() {
@@ -74,6 +75,7 @@ export default function AboutPage() {
           <TechIcon imgURL={Figma} name="Figma" />
           <TechIcon imgURL={Vim} name="Vim" />
           <TechIcon imgURL={VSCode} name="VSCode" />
+          <TechIcon imgURL={VS} name="VS" />
           <TechIcon imgURL={GitHub} name="GitHub" />
         </div>
       </div>

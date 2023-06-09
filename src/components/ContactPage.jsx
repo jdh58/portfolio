@@ -1,7 +1,6 @@
 import Send from '../assets/send.svg';
 import GitHub from '../assets/TechLogos/github.svg';
 import Twitter from '../assets/TechLogos/twitter.png';
-import Instagram from '../assets/TechLogos/instagram.png';
 import LinkedIn from '../assets/TechLogos/linkedin.svg';
 import Mail from '../assets/mail.svg';
 import '../styles/ContactPage.css';
@@ -47,20 +46,12 @@ export default function ContactPage() {
           <p className="linkName">linkedin.com/in/jonath-hawes-4</p>
         </a>
         <a
-          href="https://instagram.com/jhawes58"
-          target="_blank"
-          className="linkContainer"
-        >
-          <img src={Instagram} alt="" className="linkIcon" />
-          <p className="linkName">instagram.com/jhawes58</p>
-        </a>
-        <a
-          href="https://twitter.com/jhawes58"
+          href="https://twitter.com/jdh58"
           target="_blank"
           className="linkContainer"
         >
           <img src={Twitter} alt="" className="linkIcon" />
-          <p className="linkName">twitter.com/jhawes58</p>
+          <p className="linkName">twitter.com/jdh58</p>
         </a>
         <a href="mailto: jonathan@jonathanhawes.dev" className="linkContainer">
           <img src={Mail} alt="" className="linkIcon" />

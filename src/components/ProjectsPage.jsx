@@ -5,6 +5,9 @@ import React from '../assets/TechLogos/react.svg';
 import Firebase from '../assets/TechLogos/firebase.svg';
 import MongoDB from '../assets/TechLogos/mongodb.svg';
 import Express from '../assets/TechLogos/express.png';
+import CPP from '../assets/TechLogos/cpp.svg';
+import MYSQL from '../assets/TechLogos/mysql.png';
+import VS from '../assets/TechLogos/visualstudio.svg';
 
 import Jest from '../assets/TechLogos/jest.png';
 import '../styles/ProjectsPage.css';
@@ -22,6 +25,11 @@ export default function ProjectsPage() {
     { name: 'Express', image: Express },
     { name: 'MongoDB', image: MongoDB },
   ];
+  const coreTechIcons3 = [
+    { name: 'C++', image: CPP },
+    { name: 'MYSQL', image: MYSQL },
+    { name: 'VS', image: VS },
+  ];
 
   return (
     <div className="projectsPage page">
@@ -38,7 +46,7 @@ export default function ProjectsPage() {
         <Project
           title="CafeCritic - Coffee Rating Mobile App"
           description="Mobile app that lets you view coffee shops near you, read other's reviews, and write your own for anyone to see."
-          coreTech={coreTechIcons2}
+          coreTech={coreTechIcons3}
         />
       </div>
     </div>
