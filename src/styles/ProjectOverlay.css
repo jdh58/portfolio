@@ -1,0 +1,50 @@
+.overlay.projectOverlay {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000050;
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  overflow: scroll;
+}
+
+.overlay.projectOverlay .closeContainer {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  width: 40px;
+  height: 40px;
+  z-index: 11;
+  border-radius: 1000px;
+  padding: 5px;
+}
+
+.overlay.projectOverlay .closeContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay.projectOverlay .closeContainer:hover {
+  cursor: pointer;
+  background-color: #0000002b;
+}
+
+.overlay.projectOverlay .previewContainer {
+  width: 900px;
+  height: 506.25px;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.119);
+}
+
+.overlay.projectOverlay .previewContainer video,
+.overlay.projectOverlay .previewContainer img {
+  border-radius: 10px;
+}

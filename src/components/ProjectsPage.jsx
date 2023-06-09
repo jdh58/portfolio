@@ -21,7 +21,7 @@ import rlstat3 from '../assets/rlstat3.png';
 import Jest from '../assets/TechLogos/jest.png';
 import '../styles/ProjectsPage.css';
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ setOverlay }) {
   const coreTechIcons1 = [
     { name: 'Javascript', image: JS },
     { name: 'React', image: React },
@@ -58,6 +58,7 @@ export default function ProjectsPage() {
           screenshots={screenshots1}
           livePreview={'https://github.com/jdh58/chirper'}
           github={'https://github.com/jdh58/chirper'}
+          setOverlay={setOverlay}
         />
         <Project
           title="RLStatSaver"
@@ -67,6 +68,7 @@ export default function ProjectsPage() {
           screenshots={screenshots2}
           livePreview={'https://github.com/jdh58/rl-stat-saver'}
           github={'https://github.com/jdh58/rl-stat-saver'}
+          setOverlay={setOverlay}
         />
       </div>
     </div>

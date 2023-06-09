@@ -12,6 +12,7 @@ export default function Project({
   livePreview,
   github,
   video,
+  setOverlay,
 }) {
   const techIcons = coreTech.map((iconInfo) => {
     return <TechIcon name={iconInfo.name} imgURL={iconInfo.image} />;
@@ -28,7 +29,12 @@ export default function Project({
   return (
     <div className="project">
       <div className="leftSide">
-        <div className="projectPreview">
+        <div
+          className="projectPreview"
+          onClick={() => {
+            setOverlay({ name: 'project', video, screenshots });
+          }}
+        >
           {screenshotList}
           {video === null ? null : (
             <div className="previewContainer">
