@@ -24,7 +24,10 @@ export default function ProjectOverlay({ setOverlay, video, screenshots }) {
       {video ? (
         <div className="previewContainer">
           <video width="100%" autoPlay muted controls loop>
-            <source src={video} type="video/mp4" />
+            <source src={video[0]} type="video/webm" />
+            {video.length > 1 ? (
+              <source src={video[1]} type="video/mp4" />
+            ) : null}
           </video>
         </div>
       ) : null}

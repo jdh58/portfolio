@@ -13,7 +13,8 @@ import { v4 as uuidv4 } from 'uuid';
 import chirper1 from '../assets/chirper1.png';
 import chirper2 from '../assets/chirper2.png';
 import chirper3 from '../assets/chirper3.png';
-import chirperVideo from '../assets/chirperPreview.webm';
+import chirperVideo1 from '../assets/chirperPreview.webm';
+import chirperVideo2 from '../assets/chirperPreview.mp4';
 
 import rlstat1 from '../assets/rlstat1.png';
 import rlstat2 from '../assets/rlstat2.png';
@@ -55,7 +56,7 @@ export default function ProjectsPage({ setOverlay }) {
           title="Chirper - A Twitter Clone"
           description="Full recreation of the Twitter website. Nearly all of the functionality has been recreated."
           coreTech={coreTechIcons1}
-          video={chirperVideo}
+          video={[chirperVideo1, chirperVideo2]}
           screenshots={screenshots1}
           livePreview={'https://chirper.jonathanhawes.dev'}
           github={'https://github.com/jdh58/chirper'}

@@ -162,13 +162,13 @@
 }
 
 .project:nth-child(odd) .projectPreview:hover .previewContainer:nth-child(1) {
-  transform: scale(101.5%) translateX(-50px) rotate(-3deg);
+  transform: scale(1.015) translateX(-50px) rotate(-3deg);
 }
 .project:nth-child(odd) .projectPreview:hover .previewContainer:nth-child(2) {
-  transform: scale(101.5%) translateX(-22px) rotate(-1deg);
+  transform: scale(1.015) translateX(-22px) rotate(-1deg);
 }
 .project:nth-child(odd) .projectPreview:hover .previewContainer:nth-child(3) {
-  transform: scale(101.5%) translateX(6px) rotate(1deg);
+  transform: scale(1.015) translateX(6px) rotate(1deg);
 }
 
 .project:nth-child(even) .previewContainer:nth-child(1) {
@@ -184,13 +184,13 @@
 }
 
 .project:nth-child(even) .projectPreview:hover .previewContainer:nth-child(1) {
-  transform: scale(101.5%) translateX(50px) rotate(3deg);
+  transform: scale(1.015) translateX(50px) rotate(3deg);
 }
 .project:nth-child(even) .projectPreview:hover .previewContainer:nth-child(2) {
-  transform: scale(101.5%) translateX(22px) rotate(1deg);
+  transform: scale(1.015) translateX(22px) rotate(1deg);
 }
 .project:nth-child(even) .projectPreview:hover .previewContainer:nth-child(3) {
-  transform: scale(101.5%) translateX(-6px) rotate(-1deg);
+  transform: scale(1.015) translateX(-6px) rotate(-1deg);
 }
 
 @media (max-width: 1300px) {
