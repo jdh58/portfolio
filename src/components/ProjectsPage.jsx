@@ -57,7 +57,7 @@ export default function ProjectsPage({ setOverlay }) {
           coreTech={coreTechIcons1}
           video={chirperVideo}
           screenshots={screenshots1}
-          livePreview={'https://github.com/jdh58/chirper'}
+          livePreview={'https://chirper.jonathanhawes.dev'}
           github={'https://github.com/jdh58/chirper'}
           setOverlay={setOverlay}
         />

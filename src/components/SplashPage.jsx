@@ -7,7 +7,7 @@ export default function SplashPage() {
         <h1 className="hello">
           Hi, I'm<p className="name">Jonathan.</p>
         </h1>
-        <h2 className="welcome">Welcome to my website</h2>
+        <h2 className="welcome">Welcome to my website.</h2>
       </div>
     </div>
   );
