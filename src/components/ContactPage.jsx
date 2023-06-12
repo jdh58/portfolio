@@ -67,17 +67,21 @@ export default function ContactPage({ displayToast }) {
           <img src={GitHub} alt="" className="linkIcon" />
           <p className="linkName">github.com/jdh58</p>
         </a>
-        <a href="" target="_blank" className="linkContainer">
+        <a
+          href="https://linkedin.com/in/jonathanhawesdev"
+          target="_blank"
+          className="linkContainer"
+        >
           <img src={LinkedIn} alt="" className="linkIcon" />
-          <p className="linkName">linkedin.com/in/jonath-hawes-4</p>
+          <p className="linkName">linkedin.com/in/jonathanhawesdev</p>
         </a>
         <a
-          href="https://twitter.com/jdh58"
+          href="https://twitter.com/jhawes58"
           target="_blank"
           className="linkContainer"
         >
           <img src={Twitter} alt="" className="linkIcon" />
-          <p className="linkName">twitter.com/jdh58</p>
+          <p className="linkName">twitter.com/jhawes58</p>
         </a>
         <a href="mailto: jonathan@jonathanhawes.dev" className="linkContainer">
           <img src={Mail} alt="" className="linkIcon" />
