@@ -11,7 +11,7 @@ import HTML from '../assets/TechLogos/html.svg';
 import JS from '../assets/TechLogos/javascript.svg';
 import Jest from '../assets/TechLogos/jest.png';
 import MongoDB from '../assets/TechLogos/mongodb.svg';
-import MySQL from '../assets/TechLogos/mysql.png';
+import PostgreSQL from '../assets/TechLogos/postgreSQL.svg';
 import Node from '../assets/TechLogos/nodejs.svg';
 import NPM from '../assets/TechLogos/npm.svg';
 import Photoshop from '../assets/TechLogos/photoshop.png';
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <TechIcon imgURL={Jest} name="Jest" />
           <TechIcon imgURL={NPM} name="NPM" />
           <TechIcon imgURL={CPP} name="C++" />
-          <TechIcon imgURL={MySQL} name="MySQL" />
+          <TechIcon imgURL={PostgreSQL} name="PostgreSQL" />
           <TechIcon imgURL={Firebase} name="Firebase" />
           <TechIcon imgURL={Webpack} name="Webpack" />
           <TechIcon imgURL={Git} name="Git" />

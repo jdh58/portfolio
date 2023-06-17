@@ -6,9 +6,8 @@ import Firebase from '../assets/TechLogos/firebase.svg';
 import MongoDB from '../assets/TechLogos/mongodb.svg';
 import Express from '../assets/TechLogos/express.png';
 import CPP from '../assets/TechLogos/cpp.svg';
-import MYSQL from '../assets/TechLogos/mysql.png';
+import PostgreSQL from '../assets/TechLogos/postgreSQL.svg';
 import VS from '../assets/TechLogos/visualstudio.svg';
-import { v4 as uuidv4 } from 'uuid';
 
 import chirper1 from '../assets/chirper1.png';
 import chirper2 from '../assets/chirper2.png';
@@ -32,7 +31,7 @@ export default function ProjectsPage({ setOverlay }) {
   ];
   const coreTechIcons2 = [
     { name: 'C++', image: CPP },
-    { name: 'MYSQL', image: MYSQL },
+    { name: 'PostgreSQL', image: PostgreSQL },
     { name: 'VS', image: VS },
   ];
   const coreTechIcons3 = [
