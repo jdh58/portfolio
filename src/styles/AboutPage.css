@@ -2,9 +2,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  padding-left: 50px;
-  padding-right: 25px;
-  max-width: 1800px;
+  max-width: 1750px;
+  padding: 0 50px;
   margin: auto;
 }
 

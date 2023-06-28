@@ -207,6 +207,7 @@ table {
   --main-green-opaque: #32cd327c;
   --main-green-moreopaque: hsla(120, 61%, 50%, 0.2);
   --light-black: rgb(60, 60, 60);
+  width: 100%;
 }
 
 .page {
