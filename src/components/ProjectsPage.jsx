@@ -19,6 +19,12 @@ import rlstat1 from '../assets/rlstat1.png';
 import rlstat2 from '../assets/rlstat2.png';
 import rlstat3 from '../assets/rlstat3.png';
 
+import sportsball1 from '../assets/sportsball1.png';
+import sportsball2 from '../assets/sportsball2.png';
+import sportsball3 from '../assets/sportsball3.png';
+import sportsballPreviewWEBM from '../assets/sportsballPreview.webm';
+import sportsballPreviewMP4 from '../assets/sportsballPreview.mp4';
+
 import Jest from '../assets/TechLogos/jest.png';
 import '../styles/ProjectsPage.css';
 
@@ -36,13 +42,14 @@ export default function ProjectsPage({ setOverlay }) {
   ];
   const coreTechIcons3 = [
     { name: 'Typescript', image: TS },
-    { name: 'Native', image: React },
+    { name: 'React', image: React },
     { name: 'Express', image: Express },
     { name: 'MongoDB', image: MongoDB },
   ];
 
   const screenshots1 = [chirper3, chirper2];
   const screenshots2 = [rlstat3, rlstat2, rlstat1];
+  const screenshots3 = [sportsball2, sportsball1];
 
   return (
     <div className="projectsPage page">
@@ -51,6 +58,16 @@ export default function ProjectsPage({ setOverlay }) {
         <div className="separator"></div>
       </div>
       <div className="projectSection">
+        <Project
+          title="SportsBallGame.com"
+          description="Full stack sports game site. Complete with unique games, user accounts, and leaderboards."
+          coreTech={coreTechIcons3}
+          video={[sportsballPreviewWEBM, sportsballPreviewMP4]}
+          screenshots={screenshots3}
+          livePreview={'https://sportsballgame.com'}
+          github={'https://github.com/jdh58/sportsballgame'}
+          setOverlay={setOverlay}
+        />
         <Project
           title="Chirper - A Twitter Clone"
           description="Full recreation of the Twitter website. Nearly all of the functionality has been recreated."

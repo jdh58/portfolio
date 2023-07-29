@@ -1,6 +1,6 @@
 import TechIcon from './TechIcon';
 import Screenshot from '../assets/screenshot.png';
-import Link from '../assets/Link.svg';
+import Link from '../assets/link.svg';
 import GitHub from '../assets/TechLogos/github.svg';
 import { v4 as uuidv4 } from 'uuid';
 import '../styles/Project.css';
@@ -39,13 +39,11 @@ export default function Project({
           }}
         >
           {screenshotList}
-          {video === null ? null : (
+          {video !== null && (
             <div className="previewContainer">
               <video width="100%" autoPlay muted loop>
-                <source src={video[0]} type="video/webm" />
-                {video.length > 1 ? (
-                  <source src={video[1]} type="video/mp4" />
-                ) : null}
+                {video[0] && <source src={video[0]} type="video/webm" />}
+                {video[1] && <source src={video[1]} type="video/mp4" />}
               </video>
             </div>
           )}

@@ -5,7 +5,7 @@ import CSS from '../assets/TechLogos/css.svg';
 import Express from '../assets/TechLogos/express.png';
 import Figma from '../assets/TechLogos/figma.svg';
 import Firebase from '../assets/TechLogos/firebase.svg';
-import Git from '../assets/TechLogos/Git.svg';
+import Git from '../assets/TechLogos/git.svg';
 import GitHub from '../assets/TechLogos/github.svg';
 import HTML from '../assets/TechLogos/html.svg';
 import JS from '../assets/TechLogos/javascript.svg';
