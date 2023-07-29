@@ -22,7 +22,6 @@ import TS from '../assets/TechLogos/typescript.svg';
 import Vim from '../assets/TechLogos/vim.svg';
 import VSCode from '../assets/TechLogos/vscode.svg';
 import Webpack from '../assets/TechLogos/webpack.png';
-import MyPic from '../assets/mypic.png';
 import VS from '../assets/TechLogos/visualstudio.svg';
 import '../styles/AboutPage.css';
 
@@ -31,9 +30,6 @@ export default function AboutPage() {
     <div className="aboutPage page">
       <div className="aboutContainer">
         <div className="aboutHeader">
-          <div className="portraitContainer">
-            <img src={MyPic} alt="" className="portrait" />
-          </div>
           <div className="headerContainer">
             <h1>About Me</h1>
             <div className="separator"></div>
